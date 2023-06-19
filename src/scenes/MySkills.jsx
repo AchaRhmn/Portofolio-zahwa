@@ -2,6 +2,28 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
+const skills =[
+  {
+    skill : "HTML",
+    img : "../assets/html.png"
+  },
+
+  {
+    skill :"CSS",
+    img : "../assets/css.png"
+  },
+
+  {
+    skill :"PHP",
+    img : "../assets/php.png"
+  },
+
+  {
+    skill :"Java",
+    img : "../assets/java.png"
+  }
+
+]
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -20,11 +42,11 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="font-playfair font-semibold text-5xl mb-5">
             <span className="text-blue03">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-5 mb-7">
+          <p className="mt-5 mb-7 text-xl">
           Through my studies and hands-on experience, I have gained knowledge in various aspects of software engineering, including software design and development.
           </p>
         </motion.div>
@@ -63,72 +85,15 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-opensans text-center font-semibold text-5xl mr-20">HTML5</p>
+              <p className="font-opensans text-center font-semibold text-5xl mr-20">{skills.skill}</p>
               </div>
-            <img src="assets/html.png" alt="html5"  className=" md:w-2/3 h-40  absolute z-[-1] "/>
+            <img src={skills.img} alt="skills"  className=" md:w-2/3 h-40  absolute z-[-1] "/>
           </div>
           
         </motion.div>
 
        
-        <motion.div
-          className="md:w-1/3 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-            <p className="font-opensans text-center font-semibold text-5xl mr-20">CSS3</p>
-              </div>
-            <img src="assets/css.png" alt="css3"  className=" md:w-2/3 h-40 absolute z-[-1] " />
-            </div>
-          
-        </motion.div>
-        
-        <motion.div
-          className="md:w-1/3 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-            <p className="font-opensans text-center font-semibold text-5xl mr-20">PHP</p>
-              </div>
-            <img src="assets/php.png" alt="php" className=" md:w-2/3 h-40 absolute  z-[-1]"/>
-            </div>
-          
-        </motion.div>
 
-        <motion.div
-          className="md:w-1/3 mt-10 justify-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32 ">
-            <div className="z-10">
-            <p className="font-opensans text-center font-semibold text-5xl mr-20">JAVA</p>
-              </div>
-            <img src="assets/java.png" alt="java"  className=" md:w-2/3 h-40 absolute z-[-1] mx-auto  " /></div>
-          
-        </motion.div>
 
         
 
