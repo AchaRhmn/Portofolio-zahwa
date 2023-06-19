@@ -16,7 +16,8 @@ const projectVariant = {
 };
 
 
-const Project = ({ title , desc, link}) => {
+
+const Project = ({ title , desc}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -24,12 +25,12 @@ const Project = ({ title , desc, link}) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
+        <p className="text-3xl font-playfair">{title}</p>
+        <p className="mt-7 text-xl">
          {desc}
         </p>
         <a target="_blank"  className="hover:text-yellow transition duration-500 mt-[50px]">
-           {link}
+          
           </a>
       </div>
       <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
@@ -53,7 +54,7 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-5xl">
             <span className="text-blue03">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5 mb-5">
@@ -74,24 +75,24 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* ROW 1 */}
+          
           <div
             className="flex justify-center text-center items-center p-10 bg-blue02
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold"
           >
             Here are some projects that I made.
           </div>
-          <Project title="Kwitansi" desc="A receipt made with PHP"link="http://kwitansi001.rf.gd/"/>
+          <Project title="Kwitansi" desc="A receipt made with PHP"/>
          
-          <Project title="OCHA" desc="A profile website for tea shop made with CMS Wordpress" link=""/>
+          <Project title="OCHA" desc="A profile website for tea shop made with CMS Wordpress" />
 
-          {/* ROW 2 */}
-          <Project title="SEO On Page" desc="An SEO project about drilled well" link="https://sumurbordewata.com/"/>
-          <Project title="First Project" desc="The first project that I made using HTML and CSS" link="https://firstproject-acharhmn.vercel.app/" />
+          
+          <Project title="SEO On Page" desc="An SEO project about drilled well" />
+          <Project title="First Project" desc="The first project that I made using HTML and CSS" />
           
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold"
           >
            And various other simple projects.
           </div>
