@@ -56,7 +56,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start md:ml-[100px]">
+          <p className="mt-10 mb-7 text-lg text-center md:text-start md:ml-[100px]">
           As a Software Engineering major student at SMKN 1 Denpasar, I am passionate about technology and dedicated to honing my skills in the field of software development.
           </p>
         </motion.div>
@@ -75,7 +75,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-gradient-rainblue text-deep-blue  hover:text-white hover:bg-blue02 transition duration-500 md:ml-[100px]
-             py-3 px-7 font-semibold"
+             py-3 px-7 font-bold text-lg"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -86,7 +86,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("projects")}
             href="#projects"
           >
-            <div className="bg-deep-blue hover:text-deep-blue hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue text-lg  hover:text-deep-blue hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
             Project
             </div>
           </AnchorLink>
