@@ -15,6 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
+
 const Project = ({ title , desc, link}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
@@ -27,7 +28,7 @@ const Project = ({ title , desc, link}) => {
         <p className="mt-7">
          {desc}
         </p>
-        <a target="_blank" className="hover:text-yellow transition duration-500 mt-[50px]">
+        <a target="_blank"  className="hover:text-yellow transition duration-500 mt-[50px]">
            {link}
           </a>
       </div>
@@ -55,13 +56,12 @@ const Projects = () => {
           <p className="font-playfair font-semibold text-4xl">
             <span className="text-blue03">PRO</span>JECTS
           </p>
-          <div className="flex justify-center mt-5">
-            <LineGradient width="w-2/3" />
+          <div className="flex justify-center mt-5 mb-5">
+            <LineGradient width="w-2/3"/>
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Not the programer you deserve, but the programer you need.
-        </p>
+
+       
       </motion.div>
 
       {/* PROJECTS */}
@@ -79,22 +79,23 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-blue02
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            Here are some projects that I made.
           </div>
-          <Project title="Kwitansi" desc="apa aja lah" link="http://kwitansi001.rf.gd/index.php"/>
+          <Project title="Kwitansi" desc="A receipt made with PHP"link="http://kwitansi001.rf.gd/"/>
          
-          <Project title="OCHA" desc="apa aja lah" link=""/>
+          <Project title="OCHA" desc="A profile website for tea shop made with CMS Wordpress" link=""/>
 
           {/* ROW 2 */}
-          <Project title="SEO On Page" desc="apa aja lah" link="https://sumurbordewata.com/"/>
-          <Project title="First Project" desc="apa aja lah" link="https://firstproject-acharhmn.vercel.app/" />
-                    
+          <Project title="SEO On Page" desc="An SEO project about drilled well" link="https://sumurbordewata.com/"/>
+          <Project title="First Project" desc="The first project that I made using HTML and CSS" link="https://firstproject-acharhmn.vercel.app/" />
+          
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            SMOOTH USER EXPERIENCE
+           And various other simple projects.
           </div>
+          
         </motion.div>
       </div>
     </section>
