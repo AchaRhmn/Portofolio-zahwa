@@ -25,7 +25,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-5 mb-7">
-           "Hello World!" project with :
+          Through my studies and hands-on experience, I have gained knowledge in various aspects of software engineering, including software design and development.
           </p>
         </motion.div>
 
