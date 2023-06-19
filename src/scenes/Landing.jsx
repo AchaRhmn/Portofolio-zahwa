@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start md:ml-[100px]">
-            A very ordinary <i>homo sapiens</i>
+          As a Software Engineering major student at SMKN 1 Denpasar, I am passionate about technology and dedicated to honing my skills in the field of software development.
           </p>
         </motion.div>
 
