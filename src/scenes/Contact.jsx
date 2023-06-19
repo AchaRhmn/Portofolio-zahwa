@@ -29,14 +29,14 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-end w-full "
+        className="flex justify-center w-full "
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT </span> ME TO GET STARTED
+            <span className="text-yellow">CONTACT </span> ME 
           </p>
           <div className="flex my-5">
-            <LineGradient width="w-1/3" />
+            <LineGradient width="w-2/3" />
           </div>
         </div>
       </motion.div>
