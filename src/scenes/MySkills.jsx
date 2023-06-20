@@ -2,26 +2,24 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
+
 const skills =[
   {
-    skill : "HTML",
+    skill : "HTML5",
     img : "../assets/html.png"
   },
-
   {
-    skill :"CSS",
+    skill : "CSS3",
     img : "../assets/css.png"
   },
-
   {
-    skill :"PHP",
+    skill : "PHP",
     img : "../assets/php.png"
   },
-
   {
-    skill :"Java",
+    skill : "Java",
     img : "../assets/java.png"
-  }
+  },
 
 ]
 
@@ -71,8 +69,11 @@ const MySkills = () => {
 
       {/* SKILLS */}
            <div className="md:flex md:justify-between mt-8 gap-32 md:mb-8 ">
+
+           {skills.map((skills, index) => (
      
         <motion.div
+        key={index}
           className="md:w-1/3 mt-10 "
           initial="hidden"
           whileInView="visible"
@@ -87,16 +88,15 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-opensans text-center font-semibold text-5xl mr-20">{skills.skill}</p>
               </div>
-            <img src={skills.img} alt="skills"  className=" md:w-2/3 h-40  absolute z-[-1] "/>
+           <img src={skills.img} alt="skills" className=" md:w-2/3 h-40  absolute z-[-1] " />
           </div>
           
         </motion.div>
 
-       
-
-
         
-
+        
+           ))
+           }
         </div>
         
     </section>
