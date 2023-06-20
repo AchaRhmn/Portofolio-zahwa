@@ -30,11 +30,6 @@ const projects = [
     title: "SEO On Page",
     desc: "An SEO project about drilled well",
     link: "https://sumurbordewata.com/"
-  },
-  {
-    title: "First Project",
-    desc: "The first project that I made using HTML and CSS",
-    link: "https://firstproject-acharhmn.vercel.app/"
   }
 ];
 
