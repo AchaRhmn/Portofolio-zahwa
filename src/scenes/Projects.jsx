@@ -47,7 +47,7 @@ const Project = ({ title, desc, link }) => {
       <div className={overlayStyles}>
         <p className="text-3xl font-playfair">{title}</p>
         <p className="mt-7 text-xl">{desc}</p>
-        <a target="_blank" href={link} className="hover:text-yellow transition duration-500 mt-[50px]">Visit Site </a>
+        <a target="_blank" href={link} className="hover:text-yellow transition duration-500 mt-[50px] text-lg">Visit Site </a>
       </div>
       <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
