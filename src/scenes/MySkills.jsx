@@ -20,6 +20,15 @@ const skills =[
     skill : "Java",
     img : "../assets/java.png"
   },
+  {
+    skill : "Canva",
+    img : "../assets/canva.png"
+  },
+  {
+    skill : "figma",
+    img : "../assets/figma.png"
+  }
+
 
 ]
 
@@ -72,26 +81,36 @@ const MySkills = () => {
 
            {skills.map((skills, index) => (
      
-        <motion.div
-        key={index}
-          className="md:w-1/3 mt-10 "
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-opensans text-center font-semibold text-5xl mr-20">{skills.skill}</p>
+              <motion.div
+              key={index}
+              className="md:w-1/3 mt-10"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <div className="relative h-32">
+                <div className="z-10">
+                  <p className="font-opensans text-center font-semibold text-5xl">
+                    {skills.skill}
+                  </p>
+                </div>
+
+                <div className="w-full h-40 absolute z-[-1]">
+                  <img
+                    src={skills.img}
+                    alt="skills"
+                    className="w-full h-full object-contain mt-5"
+                  />
+                </div>
               </div>
-           <img src={skills.img} alt="skills" className=" md:w-2/3 h-40  absolute z-[-1] " />
-          </div>
-          
-        </motion.div>
+
+            </motion.div>
+   
 
         
         
