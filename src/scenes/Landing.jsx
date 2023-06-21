@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-lg text-center md:text-start md:ml-[100px]">
-          As a Software Engineering major student at SMKN 1 Denpasar, I am passionate about technology and dedicated to honing my skills in the field of software development.
+          As a Software Engineering major student at SMK Negeri 1 Denpasar, I am passionate about technology and dedicated to honing my skills in the field of software development.
           </p>
         </motion.div>
 
