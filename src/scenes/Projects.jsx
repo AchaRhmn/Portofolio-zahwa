@@ -45,11 +45,11 @@ const Project = ({ title, desc, link }) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-3xl font-playfair">{title}</p>
-        <p className="mt-7 text-xl">{desc}</p>
+        <p className="md:text-3xl font-playfair text-lg">{title}</p>
+        <p className="mt-7 md:text-xl text-sm">{desc}</p>
         <a target="_blank" href={link} className="hover:text-yellow transition duration-500 mt-[50px] text-lg">Visit Site </a>
       </div>
-      <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
+      <img src={`../assets/${projectTitle}.png`} alt={projectTitle} className="w-full h-full"/>
     </motion.div>
   );
 };
@@ -88,7 +88,7 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <div className="flex justify-center text-center items-center p-10 bg-blue02 max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold">
+          <div className="flex justify-center text-center items-center p-10 bg-blue02 max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold ">
             Here are some projects that I have made.
           </div>
           
