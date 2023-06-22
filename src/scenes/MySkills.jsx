@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 
 const skills =[
   {
-    skill : "HTML5",
+    
     img : "../assets/html.png"
   },
   {
-    skill : "CSS3",
+    
     img : "../assets/css.png"
   },
   {
-    skill : "PHP",
+    
     img : "../assets/php.png"
   },
   {
-    skill : "Java",
+    
     img : "../assets/java.png"
   },
   {
-    skill : "Canva",
+    
     img : "../assets/canva.png"
   },
   {
-    skill : "figma",
+    
     img : "../assets/figma.png"
   }
 
@@ -36,6 +36,7 @@ const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
+      
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -93,14 +94,9 @@ const MySkills = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <div className="relative h-32">
-                <div className="z-10">
-                  <p className="font-opensans text-center font-semibold text-5xl">
-                    {skills.skill}
-                  </p>
-                </div>
-
-                <div className="w-full h-40 absolute z-[-1]">
+              <div className="flex justify-center h-32">
+                
+                <div className="h-40 absolute z-[-1]">
                   <img
                     src={skills.img}
                     alt="skills"
