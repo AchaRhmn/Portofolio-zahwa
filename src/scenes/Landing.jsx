@@ -50,14 +50,14 @@ const Landing = ({ setSelectedPage }) => {
           <span
               className="xs:relative  xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[70px] before:-top-[100px] before:z-[-1]"
-            >Zahwa Parissa Rahman {""} 
+            >Zahwa Parissa Rahman {""}
             
               
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start md:ml-[100px]">
-            A very ordinary <i>homo sapiens</i>
+          <p className="mt-10 mb-7 text-lg text-center md:text-start md:ml-[100px]">
+          As a Software Engineering major student at SMK Negeri 1 Denpasar, I am passionate about technology and dedicated to honing my skills in the field of software development.
           </p>
         </motion.div>
 
@@ -74,19 +74,21 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
+          id="lancon"
             className="bg-gradient-rainblue text-deep-blue  hover:text-white hover:bg-blue02 transition duration-500 md:ml-[100px]
-             py-3 px-7 font-semibold"
+             py-3 px-7 font-bold text-lg"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Let's talk.
           </AnchorLink>
           <AnchorLink
+          id="lanpro"
             className=" bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("projects")}
             href="#projects"
           >
-            <div className="bg-deep-blue hover:text-deep-blue hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue text-lg  hover:text-deep-blue hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
             Project
             </div>
           </AnchorLink>

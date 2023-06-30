@@ -19,28 +19,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact py-48">
-      {/* HEADINGS */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: 50 },
-          visible: { opacity: 1, x: 0 },
-        }}
-        className="flex justify-end w-full "
-      >
-        <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT </span> ME TO GET STARTED
-          </p>
-          <div className="flex my-5">
-            <LineGradient width="w-1/3" />
-          </div>
-        </div>
-      </motion.div>
-
+      
       {/* FORM & IMAGE */}
       <div className="md:flex md:justify-between gap-16 mt-5">
         <motion.div
@@ -68,13 +47,22 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
+          <div className="mb-10">
+          <p className="font-playfair font-semibold text-5xl">
+            <span className="text-yellow">CONTACT </span> ME 
+          </p>
+          <div className="flex my-5">
+            <LineGradient width="w-2/3" />
+          </div>
+        </div>
+
           <form
-            target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/acharhmn@gmail.com"
             method="POST"
           >
             <input
+              id="name"
               className="w-full bg-deep-blue font-semibold placeholder-slate-600 border-b-2 p-3"
               type="text"
               placeholder="NAME"
@@ -91,6 +79,7 @@ const Contact = () => {
             )}
 
             <input
+              id="email"
               className="w-full bg-deep-blue font-semibold placeholder-slate-600 border-b-2 p-3 mt-5"
               type="text"
               placeholder="EMAIL"
@@ -107,6 +96,7 @@ const Contact = () => {
             )}
 
             <textarea
+              id="messege"
               className="w-full bg-deep-blue font-semibold placeholder-slate-600 border-2 p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
@@ -127,6 +117,7 @@ const Contact = () => {
             )}
 
             <button
+              id="button"
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-blue02 hover:text-white transition duration-500"
               type="submit"
             >
