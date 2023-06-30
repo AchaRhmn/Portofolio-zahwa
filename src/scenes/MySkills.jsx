@@ -94,7 +94,7 @@ const MySkills = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <div className="flex justify-center h-32">
+              <div className="flex justify-center">
                 
                 <div className="h-40 absolute z-[-1]">
                   <img

@@ -14,7 +14,9 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
+      <a href="https://chromedino.com/" className="text-[#083996]">:v</a>
+      </footer>
+      
   );
 };
 

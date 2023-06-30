@@ -14,6 +14,8 @@ describe('Portfolio testing', () => {
     cy.get('#lancon').click();
     cy.get('#lanpro').click();
 
+    
+
     cy.fillOutForm({
       name: 'zahwa',
       email: 'zahwa@gmail.com',
@@ -97,9 +99,8 @@ describe('social media and project', () => {
     cy.get('[id^=hover]').each(($element) => {
 
       cy.wrap($element)
-        .wait(1000)
+        
         .trigger('mouseover')
-        .wait(1000)
         .within(() => {
           cy.get('[id^=link-]').click();
         });
