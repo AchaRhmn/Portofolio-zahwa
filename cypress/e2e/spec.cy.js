@@ -1,6 +1,6 @@
 describe('Portfolio testing', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000');
+    cy.visit('https://portofolio-zahwa.vercel.app/');
   });
 
   it('Navbar and Form testing', () => {
