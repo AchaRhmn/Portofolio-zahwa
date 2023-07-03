@@ -30,6 +30,8 @@ Cypress.Commands.add('clickNavLink', (linkText) => {
 
 
   Cypress.Commands.add('fillOutForm', ({ name, email, message }) => {
+    cy.get('#button').click();
+    cy.visit('https://portofolio-zahwa.vercel.app/');
     cy.get('#name').type(name);
     cy.get('#email').type(email);
     cy.get('#messege').type(message);

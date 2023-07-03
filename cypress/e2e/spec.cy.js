@@ -2,27 +2,38 @@ describe('Portfolio testing', () => {
   beforeEach(() => {
     cy.visit('https://portofolio-zahwa.vercel.app/');
   });
+  
+  describe('1920, 1080', () => {
+    beforeEach(() => {
+      cy.viewport(1920, 1080);
+    })
 
-  it('Navbar and Form testing', () => {
+    it('Navbar testing', () => {
 
-    cy.viewport(1920, 1080);
-    cy.clickNavLink('Skills');
-    cy.clickNavLink('Projects');
-    cy.clickNavLink('Contact');
-    cy.clickNavLink('Home');
-
-    cy.get('#lancon').click();
-    cy.get('#lanpro').click();
-
-    
-
-    cy.fillOutForm({
-      name: 'zahwa',
-      email: 'zahwa@gmail.com',
-      message: 'test',
+      cy.clickNavLink('Skills');
+      cy.clickNavLink('Projects');
+      cy.clickNavLink('Contact');
+      cy.clickNavLink('Home');
+  
+      cy.get('#lancon').click();
+      cy.get('#lanpro').click();
+  
+       
+  
+    });
+  
+    it('form testing', () => {
+      
+        
+      cy.fillOutForm({
+        name: 'zahwa',
+        email: 'zahwa@gmail.com',
+        message: 'test',
+      });
     });
 
-  });
+  }) 
+  
 
 
 describe('responsive mobile', () => {
@@ -30,7 +41,7 @@ describe('responsive mobile', () => {
     cy.viewport('samsung-s10');
   });
 
-  it('Navbar and Form testing', () => {
+  it('Navbar testing', () => {
 
     cy.get('.rounded-full > img').click();
 
@@ -43,14 +54,19 @@ describe('responsive mobile', () => {
 
     cy.get('#lancon').click();
     cy.get('#lanpro').click();
+    
+    
 
+  });
+
+  it('form testing', () => {
+    
+     
     cy.fillOutForm({
       name: 'zahwa',
       email: 'zahwa@gmail.com',
       message: 'test',
-
     });
-
   });
 });
 
@@ -59,7 +75,7 @@ describe('responsive ipad', () => {
     cy.viewport(500, 700);
   });
 
-  it('Navbar and Form testing', () => {
+  it('Navbar testing', () => {
 
     cy.get('.rounded-full > img').click();
 
@@ -73,12 +89,16 @@ describe('responsive ipad', () => {
     cy.get('#lancon').click();
     cy.get('#lanpro').click();
 
+    
+  });
+  it('form testing', () => {
+    
+        
     cy.fillOutForm({
       name: 'zahwa',
       email: 'zahwa@gmail.com',
       message: 'test',
     });
-
   });
 });
 
