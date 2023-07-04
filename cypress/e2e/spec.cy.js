@@ -2,7 +2,7 @@ describe('Portfolio testing', () => {
   beforeEach(() => {
     cy.visit('https://portofolio-zahwa.vercel.app/');
   });
-  
+
   describe('1920, 1080', () => {
     beforeEach(() => {
       cy.viewport(1920, 1080);
@@ -17,14 +17,12 @@ describe('Portfolio testing', () => {
   
       cy.get('#lancon').click();
       cy.get('#lanpro').click();
-  
-       
+        
   
     });
   
     it('form testing', () => {
-      
-        
+              
       cy.fillOutForm({
         name: 'zahwa',
         email: 'zahwa@gmail.com',
@@ -60,8 +58,7 @@ describe('responsive mobile', () => {
   });
 
   it('form testing', () => {
-    
-     
+         
     cy.fillOutForm({
       name: 'zahwa',
       email: 'zahwa@gmail.com',
@@ -91,6 +88,7 @@ describe('responsive ipad', () => {
 
     
   });
+  
   it('form testing', () => {
     
         

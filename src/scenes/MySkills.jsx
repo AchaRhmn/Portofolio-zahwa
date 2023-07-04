@@ -108,11 +108,7 @@ const MySkills = () => {
          />
        </div>
      </div>
-   </motion.div>
-   
-   
-
-        
+   </motion.div>       
         
            ))
            }
